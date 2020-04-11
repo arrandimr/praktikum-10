@@ -127,7 +127,7 @@
 </div>
 </div>
 </div>
-</div>
+
 			<div><?php
 			echo "<h2>Your Input :</h2>";
 			echo "Nama = ".$nama;
@@ -141,5 +141,6 @@
 			echo "Pesan = ".$pesan;
 			?>
 			</div>
+		</div>
 </body>
 </html>
