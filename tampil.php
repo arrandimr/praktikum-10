@@ -117,98 +117,98 @@ if (mysqli_num_rows($result)>0){
 			<div class="form-group row">
 			  <label for="agama" class="col-sm-3 col-form-label">Agama</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[11]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[12]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="kwn" class="col-sm-3 col-form-label">Kewarganegaraan</label>
 					<div class="col-sm">
-						<label class="col-sm text-white"><?php echo $row[10]; ?></label>
+						<label class="col-sm text-white"><?php echo $row[10]; ?>, <?php echo $row[11]; ?></label>
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label for="kkhusus" class="col-sm-3 col-form-label">Berkebutuhan Khusus</label>
 					<div class="col-sm">
-						<label class="col-sm text-white"><?php echo $row[13]; ?></label>
+						<label class="col-sm text-white"><?php echo $row[14]; ?>, <?php echo $row[15]; ?></label>
 				</div>
 			</div>
 			
 			<div class="form-group row">
 				<label for="alamat" class="col-sm-3 col-form-label">Alamat</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[14]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[16]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="rtrw" class="col-sm-3 col-form-label">RT/RW</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[15]."/".$row[16]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[17]."/".$row[18]; ?></label>
 					</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="dusun/desa" class="col-sm-3 col-form-label">Dusun/Desa</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[17]." / ".$row[18]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[19]." / ".$row[20]; ?></label>
 					</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="kecamatan" class="col-sm-3 col-form-label">Kecamatan</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[19]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[21]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="kdpos" class="col-sm-3 col-form-label">Kode Pos</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[20]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[22]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 			  <label for="kepemilikan" class="col-sm-3 col-form-label">Kepemilikan <br> tempat tinggal</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[21]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[23]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 			  <label for="transport" class="col-sm-3 col-form-label">Moda Transportasi</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[22]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[24]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="kks" class="col-sm-3 col-form-label">No. KKS <br>(Kartu Keluarga Sejahtera)</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[23]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[25]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="anak" class="col-sm-3 col-form-label">Anak ke</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[12]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[13]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="kps" class="col-sm-3 col-form-label">Penerima KPS</label>
 					<div class="col-sm">
-						<label class="col-sm text-white"><?php echo $row[24]; ?></label>
+						<label class="col-sm text-white"><?php echo $row[26]; ?></label>
 				</div>
 			</div>
 					
 			<div class="form-group row">
 				<label for="nokps" class="col-sm-3 col-form-label">No. KPS <br>(Apabila menerima)</label>
 				<div class="col-sm">
-					<label class="col-sm text-white"><?php echo $row[25]; ?></label>
+					<label class="col-sm text-white"><?php echo $row[27]; ?></label>
 				</div>
 					</div>
 					</form>
