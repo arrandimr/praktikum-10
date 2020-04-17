@@ -53,7 +53,7 @@ CREATE TABLE `daftarmhs` (
   `kepemilikan` varchar(20) DEFAULT NULL,
   `transport` varchar(20) DEFAULT NULL,
   `no_kks` varchar(15) DEFAULT NULL,
-  `kps` varchar(5) DEFAULT NULL,
+  `kps` varchar(10) DEFAULT NULL,
   `no_kps` varchar(15) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
