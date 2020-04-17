@@ -9,9 +9,7 @@
 		.container {
 			padding-top: 25px;
 		}
-		body {
-			background:#6c757d; 
-		}
+		
 				
 	</style>
 </head>
