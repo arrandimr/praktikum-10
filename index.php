@@ -31,7 +31,7 @@
 	$email = "";	$tgllahir = "";	$alamat = "";	$kecamatan = "";	$anak = "";
 	$telp = "";		$akta = "";		$rt = "";		$kdpos = "";		$kps = "";
 	$jeniskel= "";	$agama = "";	$rw = "";		$kepemilikan = "";	$nokps = "";
-	$nisn = "";		$check = "";
+	$nisn = "";		$check = "";	$negara = "";	$jeniskkhusus = "";
 	
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 		if(empty($_POST["tanggal"])){
@@ -131,12 +131,14 @@
 			$error_kwn = "Pilih salah satu";
 		} else{
 			$kwn = cek_input($_POST["radiokwn"]);
+			$negara = cek_input($_POST["negara"]);
 			}
 		
 		if(empty($_POST["radiokkhusus"])){
 			$error_kkhusus = "Pilih salah satu";
 		} else{
 			$kkhusus = cek_input($_POST["radiokkhusus"]);
+			$jeniskkhusus = cek_input($_POST["jeniskkhusus"]);
 			}
 		
 		if(empty($_POST["alamat"])){
@@ -362,7 +364,7 @@
 					
 			<div class="form-group row">
 				<label for="kwn" class="col-sm-3 col-form-label">Kewarganegaraan</label>
-					<div class="col-sm-8">
+					<div class="col-sm">
 						<div class="custom-control custom-radio custom-control-inline">
 							<input type="radio" id="wni" name="radiokwn" class="custom-control-input" value="WNI">
   							<label class="custom-control-label" for="wni">WNI</label>
@@ -371,6 +373,9 @@
 							<input type="radio" id="wna" name="radiokwn" class="custom-control-input" value="WNA">
   							<label class="custom-control-label" for="wna">WNA</label>
 						</div>
+						<div class="col-sm-4 custom-control-inline">
+							<input type="text" name="negara" class="form-control" id="negara" placeholder="Negara Asal" value="<?php echo $negara; ?>">
+				</div>
 							<?php echo ($error_kwn !="" ? "" : "");?>
 							<span class="warning"><?php echo $error_kwn;?></span>
 				</div>
@@ -378,7 +383,7 @@
 			
 			<div class="form-group row">
 				<label for="kkhusus" class="col-sm-3 col-form-label">Berkebutuhan Khusus</label>
-					<div class="col-sm-8">
+					<div class="col-sm">
 						<div class="custom-control custom-radio custom-control-inline">
 							<input type="radio" id="ya" name="radiokkhusus" class="custom-control-input" value="YA">
   							<label class="custom-control-label" for="ya">YA</label>
@@ -387,6 +392,9 @@
   							<input type="radio" id="tidak" name="radiokkhusus" class="custom-control-input" value="TIDAK"> 
   							<label class="custom-control-label" for="tidak">TIDAK</label>
 						</div>
+						<div class="col-sm-4 custom-control-inline">
+							<input type="text" name="jeniskkhusus" class="form-control" id="jeniskkhusus" placeholder="Kebutuhan khusus" value="<?php echo $jeniskkhusus; ?>">
+				</div>
 						<?php echo ($error_kkhusus !="" ? "" : "");?>
 						<span class="warning"><?php echo $error_kkhusus;?></span>	
 							
